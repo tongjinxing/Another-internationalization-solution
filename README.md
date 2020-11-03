@@ -1,5 +1,4 @@
 # Another-internationalization-solution
-另外一个国际化解决方案。为什么有别人写好的i18n而不用却要自己写一个国际化方案，因为要求千变万化，加入你这个项目只有简单的几个html页面呢，还需要用脚手架搭建再安装插件吗？
 
 最近做了一个小项目，或者说几个简单的vue页面，由于页面太少用vue-cli搭建感觉适得其反，于是用h5做的，直接页面引入vue的script标签，自然也就没办法install各种插件了，但是又需要国际化，加上又用了thymeleaf模板，开始走了一些弯路，后来直接写了个函数实现了。
 
@@ -8,9 +7,7 @@
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b23ee81ed6654cb0a7c14212999af92a~tplv-k3u1fbpfcp-watermark.image)
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f52476b53184f95a4b68ddc05ca9661~tplv-k3u1fbpfcp-watermark.image)
 
-首先页面引入vue,由于第一次接触thymeleaf，刚开始连引入这个路径都搞半天。。
-
-`<script src="/js/vue.min.js"></script>`
+首先页面引入vue,由于第一次接触thymeleaf，刚开始连引入路径问题都搞半天。。
 
 结构是这样的
 
@@ -41,7 +38,7 @@ async doTranslation() {
       await fetch(currentlang)
         .then(res=>res.json())
         .then(data=>{
-        //赋值给变量，从而页面可以直接读取，当然较大的项目可以存到store里面
+        //赋值给变量，从而页面可以直接读取
           this.langData = data;
       })
     },
