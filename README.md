@@ -5,7 +5,8 @@
 先上效果图
 
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c6f44a4b8e2d4565b64245b9aba853b2~tplv-k3u1fbpfcp-watermark.image)
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6a5623a3342404fa7faa67e2e82e19e~tplv-k3u1fbpfcp-watermark.image)
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/98676c8d9819422f9620455ba74dd10a~tplv-k3u1fbpfcp-watermark.image)
 
 首先页面引入vue,由于第一次接触thymeleaf，刚开始连引入路径问题都搞半天。。
 
